@@ -2,6 +2,12 @@
 layout: default
 ---
 
-## Header 2
+## 2018-5-6
 
-> [Link to another page](./another-page.html).
+* * *
+
+> [let 与 const](./another-page.html).
+> Tags: <dt>Javascript</dt>, <dt>ES6</dt>
+
+> [let 与 const](./another-page.html).
+> Tags: <dt>Javascript</dt>, <dt>ES6</dt>
