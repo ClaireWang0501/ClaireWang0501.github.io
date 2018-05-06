@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# let声明需要注意的point
+# let命令需要注意之处
 > Written May 6, 2018. Tagged **Javascript**, **ES6**, **let**.
 
 ```
