@@ -2,12 +2,10 @@
 layout: default
 ---
 
-## 2018-5-6
+## [let 与 const](./another-page.html)
 
 * * *
 
-> [let 与 const](./another-page.html).
-> Tags: <dt>Javascript</dt>, <dt>ES6</dt>
+> 2018-5-6 - Tags: <dl><dt>Javascript</dt>, <dt>ES6</dt></dl>
 
-> [let 与 const](./another-page.html).
-> Tags: <dt>Javascript</dt>, <dt>ES6</dt>
+
