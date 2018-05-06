@@ -99,3 +99,69 @@ if (true) {
 ```
 
 该变量声明前的部分区域称为暂时性死区（Temporal Dead Zone）。
+
+### 3. 同一块级作用域内let不能重复声明
+
+```js
+// 报错
+function func() {
+  let a = 10;
+  var a = 1;
+}
+
+// 报错
+function func() {
+  let a = 10;
+  let a = 1;
+}
+```
+
+同时，函数内部重复设定参数也会报错。
+
+```js
+function func(arg) {
+  let arg; // 报错
+}
+
+function func(arg) {
+  {
+    let arg; // 不报错
+  }
+}
+```
+
+需要注意的在ios10中safari仍会对于 _let_ 与 _const_ 采用函数作用域，而不是块级作用域，因此在同一函数作用域中的不同块级作用域下声明同一变量也会报出重复声明的error。
+
+```js
+{
+  let a = 1;
+}
+{
+  let a = 2; // 报错
+}
+```
+
+### 4. 在全局中声明let变量，不属于顶层属性
+
+顶层对象在浏览器中指的是 _window_ ，在Node中指的是 _global_ 。若使用 _var_ 在全局中声明一个变量，该变量会自动成为顶层对象的属性。相对应，若声明某个顶层对象的属性，则该属性会自动成为一个全局变量。
+
+```js
+window.a = 1;
+a // 1
+
+a = 2;
+window.a // 2
+```
+
+而 _let_ 声明的变量则不会成为顶层对象的属性。
+
+```js
+var a = 1;
+// 如果在 Node 的 REPL 环境，可以写成 global.a
+// 或者采用通用方法，写成 this.a
+window.a // 1
+
+let b = 1;
+window.b // undefined
+```
+
