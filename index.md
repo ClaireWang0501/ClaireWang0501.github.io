@@ -2,16 +2,16 @@
 layout: default
 ---
 
-# 2018
+## 2018 MAY
 
-## [let 与 const](./another-page.html) （MAY 6）
+### [let 与 const](./another-page.html)
 
-> Tags: Javascript, ES6
+> Tagged Javascript, ES6
 
 * * *
 
-## [let 与 const](./another-page.html) （MAY 6）
+### [let 与 const](./another-page.html)
 
-> Tags: Javascript, ES6
+> Tagged Javascript, ES6
 
 
